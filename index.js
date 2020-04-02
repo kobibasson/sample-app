@@ -8,5 +8,5 @@ app.use('/api/route', bodyParser.json())
 
 app.use('/api/route', require('./routes/api/route'))
 
-const port = process.env.API_PORT || 3000
+const port = process.env.API_PORT || 80
 app.listen(port, () => console.log(`App listening on ${port}`))
